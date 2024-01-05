@@ -10,27 +10,6 @@ function Sidebar() {
         setOpen] = useState(true);
     const [submenuOpen,
           setSubmenuOpen] = useState(false);    
-
-    // const Menus = [
-    //   { title: "Dashboard", path: '/' },
-    //   { title: "Artikel", path: '/artikel' },
-    //   { title: "Media", spacing: true},
-    //   {
-    //     title: "Projects",
-    //     submenu: true,
-    //     submenuItems: [
-    //       { title: "Submenu 1" },
-    //       { title: "Submenu 2" },
-    //       { title: "Submenu 3" },
-    //     ],
-    //   },
-    //   { title: "Analytics" },
-    //   { title: "Inbox" },
-    //   { title: "Profile", spacing:true },
-    //   { title: "Setting" },
-    //   { title: "Logout"}
-    // ];
-
     const Menus = [
         { title: "Dashboard", path: '/' },
 
@@ -45,12 +24,6 @@ function Sidebar() {
           ],
         },
       ];
-
-    // const history = useHistory;
-    // const handleMenuItemClick = (path) => {
-    //     useHistory.push(path); // Use history.push to navigate
-    //   };
-    
 
     return (
         <div className='flex'>

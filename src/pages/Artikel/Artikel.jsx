@@ -2,6 +2,7 @@ import React from 'react'
 import Sidebar from "../../components/Sidebar";
 import DataArtikel from '../../components/DataArtikel';
 
+
 function Artikel() {
   return (
     <>

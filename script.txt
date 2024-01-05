@@ -1,0 +1,19 @@
+// opening
+Assalamualaikum warahmatullahi wabarakatuh, halo semua, kita dari team ... yang beranggotakan saya sendiri ... dan saya ....
+Dalam event invfest X ISF 8.0 Web apps competition, kita membuat sebuah aplikasi e-artefak, e-artefak ini merupakan aplikasi deteksi artefak museum semedo secara otomatis, yang di lengkapi fitur deteksi artefak, chatbot, artikel dan berita terkait dengan museum semedo.
+aplikasi yang satu ini kita membuatnya dengan latar belakang, untuk mempermudah pengunjung explore lebih dalam mengenai artefak museum hanya dengan menggunakan aplikasi bnerbasis website.
+
+baik tanpa basa-basi, kita akan mendemonstrasikan aplikasi yang telah kita buat.
+
+yang pertama ada menu home, di menu beranda ini terdapat tampilan seperti ini
+yang kedua ada artikel
+yang ketiga ada vision, nah di bagian vision ini adalah halaman dimana kita bisa mendeteksi sebuah gambar artefaknya, disini kita menggunakan sebuah teknologi AI berbasis transfer learning, yang kita desain dengan kapasitas dataset kuadran 2, yang dimana kondisi ini mirip lebih banyak dataset dengan imagenet.
+
+yang keempat ada berita
+yang ke ada tanya, chabot disini kita mengguanakan Ai, yang kita bangun dengan berlandaskan NLP (natural language processing) dengan data yang kita buat sendiri.
+
+
+baik, sekian presentasi dari kita, kurang lebihnya mohon maaf, wassalamualaikum warahmatullahi wabarakatuh.
+
+
+// Pertanyaan unit testing
