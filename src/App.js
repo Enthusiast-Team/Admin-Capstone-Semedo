@@ -6,7 +6,7 @@ import Dashboard from './pages/Dashboard';
 import Artikel from './pages/Artikel/Artikel';
 import TambahArtikel from './pages/Artikel/TambahArtikel';
 import Login from './components/login/Login';
-import EditArtikel from './components/form/EditArtikel';
+import EditArtikel from './pages/Artikel/EditArtikel';
 
 
 

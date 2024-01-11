@@ -4,6 +4,7 @@ import { BsArrowLeft, BsSearch, BsChevronDown } from "react-icons/bs";
 import { AiFillEnvironment } from "react-icons/ai";
 import { RiDashboardFill } from "react-icons/ri";
 import DataArtikel from './DataArtikel';
+import logo from "../assets/logo/logo_semedo.png"
 
 function Sidebar() {
     const [open,
@@ -26,18 +27,21 @@ function Sidebar() {
       ];
 
     return (
-        <div className='flex'>
+        <div className=''>
         <div
-            className={`bg-dark-purple h-screen p-5 pt-8 ${open
+            className={`bg-dark-purple h-full mb-96 p-5 pt-8 ${open
             ? "w-72"
-            : "w-20"} duration-300 relative`}>
+            : "w-20"} duration-300 relative`}
+            
+            >
+            
             <BsArrowLeft
                 className={`bg-white text-dark-purple text-3xl rounded-full absolute -right-3 top-9 border border-dark-purple cursor-pointer ${ !open && "rotate-180"}`}
                 onClick={() => setOpen(!open)}/>
 
             <div className='inline-flex'>
-                <AiFillEnvironment
-                    className={`bg-amber-300 text-4xl rounded cursor-pointer block float-left mr-2 duration-500 ${open && "rotate-[360deg"}`}
+                <img src={logo}
+                    className={`text-4xl rounded w-15 h-10 cursor-pointer block float-left mr-2 duration-500 ${open && "rotate-[360deg"}`}
                 />
                 <h1 className={`text-white origin-left font-medium text-2xl duration-300 ${ !open && "scale-0" }`}>MySemedo</h1>
                 
@@ -53,7 +57,6 @@ function Sidebar() {
                   <li
                     key={index}
                     className={`text-gray-300 text-sm flex items-center gap-x-2 cursor-pointer p-2 hover:bg-light-white rounded-md ${menu.spacing ? "mt-9" : "mt-2"}`}
-                    // onClick={() => handleMenuItemClick(menu.path)} // Call the function on click
                     >
                       <Link to={menu.path} className="text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-light-white w-full rounded-md">
                         <span className='text-2xl block float-left'>
@@ -64,21 +67,8 @@ function Sidebar() {
                             >
                             {menu.title}
                         </span>
-                            {/* {menu.submenu && (
-                        <BsChevronDown className={`${submenuOpen && 'rotate-180'}`} onClick={() => setSubmenuOpen(!submenuOpen)} />
-                            )} */}
                         </Link>
                     </li>
-
-                    {/* {menu.submenu && submenuOpen && (
-                      <ul>
-                        {menu.submenuItems.map((submenuItem, index) => (
-                          <li key={index} className='text-gray-300 text-sm flex items-center gap-x-4 p-2 px-5 cursor-pointer p-2 hover:bg-light-white rounded-md'>
-                            {submenuItem.title}
-                          </li>
-                        ))}
-                      </ul>
-                    )} */}
                 </>
             )
             )}
@@ -86,9 +76,6 @@ function Sidebar() {
             
         </div>
 
-        {/* <div className='p-7'>
-              <h1 className='text-2xl font-semibold'>Home Page</h1>
-        </div> */}
     </div>
     )
 }
